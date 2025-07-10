@@ -5,18 +5,18 @@ It was built and tested using *Tinkercad Circuits*, allowing for a complete simu
 
 ---
 
-## 🎯 Features
+##  Features
 
-- 🔥 Detects high temperature using TMP36 sensor
-- 🧪 Detects smoke/gas using MQ2 sensor
-- 🚨 Activates buzzer and LED when danger is detected
-- 🧠 Ignores fake readings like -38°C for accuracy
-- ⚡ Real-time status via Serial Monitor
-- 🛠 Simulated and verified using *Tinkercad*
+-  Detects high temperature using TMP36 sensor
+-  Detects smoke/gas using MQ2 sensor
+-  Activates buzzer and LED when danger is detected
+-  Ignores fake readings like -38°C for accuracy
+-  Real-time status via Serial Monitor
+-  Simulated and verified using *Tinkercad*
 
 ---
 
-## 🧰 Components Used
+##  Components Used
 
 | Component                | Quantity |
 |--------------------------|----------|
@@ -34,13 +34,13 @@ It was built and tested using *Tinkercad Circuits*, allowing for a complete simu
 - The *gas sensor (MQ2)* detects smoke or flammable gases.
 - The *temperature sensor (TMP36)* checks for rising heat.
 - If either gas > 400 or temperature > 45°C → it triggers:
-  - ✅ LED ON
-  - ✅ Buzzer ON
+  -  LED ON
+  -  Buzzer ON
 - If values are fake (like -38°C), they are *ignored* in code to avoid false alarms.
 
 ---
 
-## 🔍 Threshold Logic
+##  Threshold Logic
 
 ```cpp
 if (temperature > 45°C || gas > 400)
